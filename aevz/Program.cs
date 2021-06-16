@@ -37,7 +37,7 @@ namespace aevz
                             string replaceWith = args[1];
                             string inFileAtPath = args[2];
                             
-                            Console.WriteLine($"Search for '{searchFor}' & replace with '{replaceWith}' in file '{inFileAtPath}'.");
+                            //~ Console.WriteLine($"Search for '{searchFor}' & replace with '{replaceWith}' in file '{inFileAtPath}'.");
 
                             if (File.Exists(inFileAtPath))
                             {
@@ -60,7 +60,7 @@ namespace aevz
                             {								
                                 string replaceWith = File.ReadAllText(replacerFile);
                                                                 
-								Console.WriteLine($"Search for '{searchFor}' & replace with '{replaceWith}' in file '{inFileAtPath}'.");
+								//~ Console.WriteLine($"Search for '{searchFor}' & replace with '{replaceWith}' in file '{inFileAtPath}'.");
 
 								if (File.Exists(inFileAtPath))
 								{

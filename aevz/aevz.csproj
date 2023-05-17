@@ -1,8 +1,18 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
     <OutputType>Exe</OutputType>
     <TargetFramework>net5.0</TargetFramework>
+    <PackageId>ak.aevz.cli</PackageId>
+    <Version>1.1.1</Version>
+    <Authors>Abhishek Kumar</Authors>
+    <Company>AK</Company>
+    <ToolCommandName>aevz</ToolCommandName>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="docs\README.md" Pack="true" PackagePath="\"/>
+  </ItemGroup>
 
 </Project>

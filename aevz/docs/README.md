@@ -1,7 +1,4 @@
 # aevz
-It is cross-platform substituter tool for search and replace string in given file
-
-# Introduction
 
 `aevz` is a command-line tool that allows you to search and replace a string in a given file with another string or the content of another file. It is written in C# and runs on .NET Core.
 

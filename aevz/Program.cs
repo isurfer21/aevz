@@ -27,7 +27,7 @@ namespace aevz
                     case "-v":
                     case "--version":
                         Console.WriteLine("Aevz - Substituter \n"+
-                            "Version 1.1.0 \n" +
+                            "Version 1.1.1 \n" +
                             "A tool to search string and replace that with substitute. \n");
                         break;
                     default:
@@ -55,23 +55,23 @@ namespace aevz
                             string searchFor = args[0];
                             string replacerFile = args[2];
                             string inFileAtPath = args[3];
-								
+                                
                             if (File.Exists(replacerFile))
-                            {								
+                            {
                                 string replaceWith = File.ReadAllText(replacerFile);
                                                                 
-								//~ Console.WriteLine($"Search for '{searchFor}' & replace with '{replaceWith}' in file '{inFileAtPath}'.");
+                                //~ Console.WriteLine($"Search for '{searchFor}' & replace with '{replaceWith}' in file '{inFileAtPath}'.");
 
-								if (File.Exists(inFileAtPath))
-								{
-									string fileContent = File.ReadAllText(inFileAtPath);
-									fileContent = fileContent.Replace(searchFor, replaceWith);
-									File.WriteAllText(inFileAtPath, fileContent);
-								}
-								else
-								{
-									Console.WriteLine("Error: File path doesn't exist");
-								}
+                                if (File.Exists(inFileAtPath))
+                                {
+                                    string fileContent = File.ReadAllText(inFileAtPath);
+                                    fileContent = fileContent.Replace(searchFor, replaceWith);
+                                    File.WriteAllText(inFileAtPath, fileContent);
+                                }
+                                else
+                                {
+                                    Console.WriteLine("Error: File path doesn't exist");
+                                }
                             }
                             else
                             {
